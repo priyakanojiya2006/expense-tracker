@@ -1,0 +1,209 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Expense Tracker</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="index.css">
+
+
+    
+
+   
+
+</head>
+
+
+<body>
+
+    <div class="container">
+
+
+        <!-- =========================
+             TOP BAR
+        ========================= -->
+
+        <div class="topbar">
+
+            <h1>Expense Tracker</h1>
+
+            <button id="logout">
+                Logout
+            </button>
+
+        </div>
+
+
+        <!-- =========================
+             ADD TRANSACTION BUTTON
+        ========================= -->
+
+        <button id="transaction">
+
+            <i class="fa-solid fa-plus"></i>
+
+            Add Transaction
+
+        </button>
+
+
+        <!-- =========================
+             SEARCH / FILTER AREA
+        ========================= -->
+
+        <div id="searchArea">
+
+            <input
+                id="search"
+                type="text"
+                placeholder="Search your items"
+            >
+
+
+            <select id="select">
+
+                <option value="all">
+                    All
+                </option>
+
+                <option value="income">
+                    Income
+                </option>
+
+                <option value="expense">
+                    Expense
+                </option>
+
+            </select>
+
+
+            <input
+                id="date"
+                type="date"
+            >
+
+
+            <button id="clear">
+                CLEAR
+            </button>
+
+        </div>
+
+
+        <div id="addtransaction"></div>
+
+
+        <!-- =========================
+             TRANSACTION FORM
+        ========================= -->
+
+        <div id="dashboard">
+
+            <div class="form-section">
+
+                <h2>
+                    Add Transaction
+                </h2>
+
+
+                <input
+                    id="exp"
+                    type="text"
+                    placeholder="Enter transaction name"
+                >
+
+
+                <input
+                    id="am"
+                    type="number"
+                    placeholder="Enter amount"
+                >
+
+
+                <div class="radio-section">
+
+                    <input
+                        id="inco"
+                        name="type"
+                        value="income"
+                        type="radio"
+                    >
+
+                    <label for="inco">
+                        Income
+                    </label>
+
+
+                    <input
+                        id="expen"
+                        name="type"
+                        value="expense"
+                        type="radio"
+                    >
+
+                    <label for="expen">
+                        Expense
+                    </label>
+
+                </div>
+
+
+                <button id="btn">
+                    ADD
+                </button>
+
+            </div>
+
+
+            <!-- =========================
+                 INCOME / EXPENSE BUTTONS
+            ========================= -->
+
+            <div class="summary-buttons">
+
+                <button id="Expense">
+                    Expense
+                </button>
+
+                <button id="Income">
+                    Income
+                </button>
+
+            </div>
+
+
+            <p id="ex"></p>
+
+            <p id="in"></p>
+
+
+            <!-- =========================
+                 TRANSACTION LIST
+            ========================= -->
+
+            <div id="list">
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================= -->
+
+    <script src="expe.js"></script>
+
+</body>
+
+</html>
