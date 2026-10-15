@@ -89,7 +89,7 @@ if (loginForm) {
                     JSON.stringify(data)
                 );
 
-                window.location.href = "index.html";
+                window.location.href = "expe.html";
 
             })
             .catch(() => {
