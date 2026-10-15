@@ -118,12 +118,12 @@ expense-tracker/
 │   └── users.json       # Registered users (created automatically, not committed)
 │
 └── public/              # Frontend files served by Express
-    ├── Navbar.html      # Home page (opens at "/")
+    ├── index.html      # Home page (opens at "/")
     ├── Features.html    # Features page
     ├── Dashboard.html   # Dashboard page
     ├── signup.html      # Create account page
     ├── login.html       # Login page
-    ├── index.html       # Main expense tracker page
+    ├── expe.html       # Main expense tracker page
     ├── auth.js          # Sign up and login (calls the API)
     ├── expe.js          # Expense tracker functionality
     └── *.css            # Page styles
